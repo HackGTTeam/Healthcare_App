@@ -16,9 +16,12 @@ import json
 
 app = Flask(__name__)
 
-from google.cloud import firestore
+# from google.cloud import firestore
+# from google.cloud import bigquery
 
-db = firestore.Client() #for database
+#client = bigquery.Client()
+
+#db = firestore.Client() #for database
 
 
 @app.route("/")
@@ -28,17 +31,17 @@ def home():
 @app.route("/register",methods=["GET","POST"])
 def model_training():
 
-    if request.method == "POST":
-        fname = request.form.get("fname")
-        lname = request.form.get("lname")
-        uname = request.form.get("uname")
+    # if request.method == "POST":
+    #     fname = request.form.get("fname")
+    #     lname = request.form.get("lname")
+    #     uname = request.form.get("uname")
 
-        doc_ref = db.collection(u'users').document(uname)
-        doc_ref.set({
-            u'uname' : uname,
-            u'first': fname,
-            u'last': lname
-        })
+    #     doc_ref = db.collection(u'users').document(uname)
+    #     doc_ref.set({
+    #         u'uname' : uname,
+    #         u'first': fname,
+    #         u'last': lname
+    #     })
 
     return render_template('register.html')
 
