@@ -28,6 +28,10 @@ app = Flask(__name__)
 def home():
     return render_template('landingpage.html')
 
+@app.route("/enter_symptoms",methods=["GET","POST"])
+def add_symptoms():
+    return render_template('enter_symptoms.html')
+
 @app.route("/register",methods=["GET","POST"])
 def model_training():
 
@@ -44,7 +48,22 @@ def model_training():
     #     })
 
     return render_template('register.html')
+@app.route("/profile",methods=["GET","POST"])
+def create_profile():
 
+    # if request.method == "POST":
+    #     fname = request.form.get("fname")
+    #     lname = request.form.get("lname")
+    #     uname = request.form.get("uname")
+
+    #     doc_ref = db.collection(u'users').document(uname)
+    #     doc_ref.set({
+    #         u'uname' : uname,
+    #         u'first': fname,
+    #         u'last': lname
+    #     })
+
+    return render_template('profile.html')
 
 @app.route("/predict",methods=["GET","POST"])
 def predict_entries():

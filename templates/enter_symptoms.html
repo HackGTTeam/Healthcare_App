@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>House Listing Price Prediction</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #7aa8b7;
+        border-radius: 6px;
+        outline: none;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href=""> -->
+</head>
+
+<nav>
+    <!-- <header style = "background-color: rgb(152, 181, 205)"> </header> -->
+
+    <img src="../static/media/webicon.png" alt="logo" class="center" style="width:250px">
+
+</nav>
+
+<body>
+
+
+<form action="/enter_symptoms" method="post">
+    <!--<label style="text-align: center"></label>-->
+    <br>
+    <label style="font-family: Arial" class="center"><b>Select all symptoms</b></label><br>
+    <br>
+    <label style="font-family: Arial" class="center"><b>Select multiple items by pressing command or ctrl while selecting</b></label><br>
+    <br>
+</form>
+
+<form id="form2">
+    <select width=300 style="width: 350px"
+            size="8" multiple>
+        <option value='blue'>Blue</option>
+        <option value='green'>Green</option>
+        <option value='red'>Red</option>
+        <option value='yellow'>Yellow</option>
+        <option value='orange'>Orange</option>
+    </select>
+</form>
+
+{% block content %} {% endblock %}
+
+<!-- <footer>
+    <br>
+    Sign up
+</footer> -->
+
+</body>
+
+</html>
+

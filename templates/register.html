@@ -9,6 +9,18 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #7aa8b7;
+        border-radius: 6px;
+        outline: none;
+      }
+    </style>
     <!-- <link rel="stylesheet" href=""> -->
 </head>
 
@@ -31,22 +43,32 @@
         <input type="text" id="uname" name="uname">
         <label style="font-family: Arial" for="uname" class="center"><b>UserID (Must be unique)</b></label><br>
         <br>
+        <input type="text" id="password" name="password">
+        <label style="font-family: Arial" for="password" class="center"><b>Password (Must be unique)</b></label><br>
+        <br>
         <input type="text" id="fname" name="fname">
         <label style="font-family: Arial" for="fname" class="center"><b>First Name</b></label><br>
         <br>
         <input type="text" id="lname" name="lname">
         <label style="font-family: Arial" for="lname" class="center"><b>Last Name</b></label><br>
         <br>
-        <input type="submit" value="Submit"><br>
+        <!-- <nav>
+        <a href={{ url_for( 'create_profile') }}>
+            <button class="btn btn-primary btn-lg">Sign Up</button>
+        </a>
+        </nav> -->
+        <nav>
+            <a class="button" href="http://127.0.0.1:5000/profile">Sign Up</a>
+        </nav>
         <br> 
     </form>
 
     {% block content %} {% endblock %}
 
-    <footer>
+    <!-- <footer>
         <br>
         Sign up
-    </footer>
+    </footer> -->
 
 </body>
 
