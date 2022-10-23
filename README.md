@@ -1,6 +1,6 @@
 # Healthcare_App
 
-Healthcare Web Application that helps patients with symptoms find out about possible diseases and relevent clinical trials based on those conditions.
+Healthcare Web Application that helps patients with symptoms find out about possible diseases and relevant clinical trials based on those conditions.
 
 - Used EndlessMedicalAPI that uses ML to predict possible diseases based off given symptoms
   - https://endlessmedical.com/
