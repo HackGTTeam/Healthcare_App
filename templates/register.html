@@ -5,10 +5,22 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>House Listing Price Prediction</title>
+    <title>MediConnect</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #7aa8b7;
+        border-radius: 6px;
+        outline: none;
+      }
+    </style>
     <!-- <link rel="stylesheet" href=""> -->
 </head>
 
@@ -28,8 +40,14 @@
         <br>
         <label style="font-family: Arial" for="fname" class="center"><b>User Registration</b></label><br>
         <br>
-        <input type="text" id="uname" name="uname">
-        <label style="font-family: Arial" for="uname" class="center"><b>UserID (Must be unique)</b></label><br>
+        <input type="text" id="email" name="email">
+        <label style="font-family: Arial" for="uname" class="center"><b>Email (Must be unique)</b></label><br>
+        <br>
+        <input type="text" id="password" name="password">
+        <label style="font-family: Arial" for="password" class="center"><b>Password</b></label><br>
+        <br>
+        <input type="text" id="password2" name="password2">
+        <label style="font-family: Arial" for="password2" class="center"><b>Confirm Password</b></label><br>
         <br>
         <input type="text" id="fname" name="fname">
         <label style="font-family: Arial" for="fname" class="center"><b>First Name</b></label><br>
@@ -37,16 +55,60 @@
         <input type="text" id="lname" name="lname">
         <label style="font-family: Arial" for="lname" class="center"><b>Last Name</b></label><br>
         <br>
+        <input type="text" id="sex" name="sex">
+        <label style="font-family: Arial" for="sex" class="center"><b>Sex</b></label><br>
+        <br>
+        <input type="date" id="DOB" name="DOB">
+        <label style="font-family: Arial" for="DOB" class="center"><b>Date of Birth</b></label><br>
+        <br>
+        <input type="text" id="other" name="other">
+        <label style="font-family: Arial" for="other" class="center"><b>Other</b></label><br>
+        <br>
+        <label style="font-family: Arial" class="center"><b>Address</b></label><br>
+        <br>
+        <div class="form-group">
+            <input type="text"
+                class="form-control"
+                id="street"
+                name="street"
+                placeholder="Street">
+
+            <input type="text"
+                class="form-control"
+                id="city"
+                placeholder="City">
+
+            <input type="text"
+                class="form-control"
+                id="state"
+                placeholder="State">
+
+            <input type="text"
+                class="form-control"
+                id="zip"
+                placeholder="Zip">
+
+            <input type="text"
+                class="form-control"
+                id="county"
+                placeholder="County">
+
+            <input type="text"
+                class="form-control"
+                id="country"
+                placeholder="Country">
+        </div>
+        <br>
         <input type="submit" value="Submit"><br>
         <br> 
     </form>
 
     {% block content %} {% endblock %}
 
-    <footer>
+    <!-- <footer>
         <br>
         Sign up
-    </footer>
+    </footer> -->
 
 </body>
 

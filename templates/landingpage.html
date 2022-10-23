@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>House Listing Price Prediction</title>
+    <title>MediConnect</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../static/css/style.css">
@@ -14,45 +14,44 @@
 
 <nav>
     <!-- <header style = "background-color: rgb(152, 181, 205)"> </header> -->
+    <label style="font-family: Arial" class="center"><b>MediConnect</b></label><br>
 
-    <img src="../static/media/webicon.png" alt="logo" class="center" style="width:250px">
-    
 </nav>
 
-<body>
-    <!-- <nav style = "background-color: rgb(255, 255, 255)")></nav> -->
-    <header>
-        <nav>
-            <a href={{ url_for( 'predict_entries') }}>List Price</a>
-            <a href={{ url_for( 'model_training') }}>Train Model</a><br>
-        </nav>
-    </header>
+<body style="background-color:#143479;">
+<!-- <nav style = "background-color: rgb(255, 255, 255)")></nav> -->
+<header>
+    <nav>
+        <!-- <a href={{ url_for( 'create_profile') }}>Create Profile</a>
+        <a href={{ url_for( 'add_symptoms') }}>Train Model</a><br> -->
+        <a href="http://127.0.0.1:5000/register">Make an account</a><br>
+    </nav>
+</header>
+</body>
+
+<body style="background-color:#143479;">
+<!-- <header style = "background-color: rgb(152, 181, 205)"> </header> -->
+
+<img src="../static/media/launchpage (1).png" alt="logo" class="center" style="width:100%" style="height:100%" >
+<!-- <div class="centered" style="color:rgb(255, 255, 255); font-size: 50px;">Welcome</div>
+<div class="centerish" style="color:rgb(255, 255, 255); font-size: 25px">If you would like to predict your listing price based on current data, click "List Price"</div>
+<div class="bottom" style="color:rgb(255, 255, 255); font-size: 25px">If you an administrator who would like to train the model for list prices, click "Train Model"</div>
+-->
 </body>
 
 <body>
-    <!-- <header style = "background-color: rgb(152, 181, 205)"> </header> -->
+<!-- <br>
+If you would like to predict your listing price based on current data, click "List Price"<br>
+<br>
+If you an administrator who would like to train the model for list prices, click "Train Model"<br>
+<br>
+{% block content %} {% endblock %} -->
 
-    <img src="../static/media/city.png" alt="logo" class="center" style="width:100%">
-    <!-- <div class="centered" style="color:rgb(255, 255, 255); font-size: 50px;">Welcome</div>
-    <div class="centerish" style="color:rgb(255, 255, 255); font-size: 25px">If you would like to predict your listing price based on current data, click "List Price"</div>
-    <div class="bottom" style="color:rgb(255, 255, 255); font-size: 25px">If you an administrator who would like to train the model for list prices, click "Train Model"</div>
-    -->
-</body>
-
-<body>
-    <!-- <br>
-    If you would like to predict your listing price based on current data, click "List Price"<br>
+<footer>
     <br>
-    If you an administrator who would like to train the model for list prices, click "Train Model"<br>
-    <br> 
-    {% block content %} {% endblock %} -->
-
-    <footer>
-        <br>
-        Realty Predictions 2022
-    </footer>
+    MediConnect
+</footer>
 
 </body>
 
 </html>
-
